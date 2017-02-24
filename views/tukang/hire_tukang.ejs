@@ -1,10 +1,14 @@
-<form action="/tukasngs/order" method="post">
+<form action="/tukangs/order" method="post">
 <h1>Ini adalah halaman kedua, HIRE TUKANG</h1>
 <h2>Profil Tukang<h2>
+  <input type="hidden" name="tukangid" value="<%=tukang.id%>">
+  <input type="hidden" name="tukangname" value="<%=tukang.fullname%>">
   Nama lengkap si tukang :  <%= tukang.fullname %>
 <br>
 <textarea name="description" size="60" rows="15" cols="80">halo tukang... Bantuin melahirkan dong</textarea>
   <h2>Profil User</h2>
+  <input type="hidden" name="userid" value="<%=user.id%>">
+  <input type="hidden" name="username" value="<%=user.fullname%>">
   Nama Lengkap si User : <%= user.fullname %>
   <br><br>
   <input type="submit" name="submit" />
