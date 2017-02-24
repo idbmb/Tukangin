@@ -12,12 +12,12 @@ module.exports = {
         isBetaMember: false
       }], {});
     */
-    let faker = require('faker')
-    let newArr = []
-    for (let i = 0; i < 10; i++ ) {
-      newArr.push({fullname: faker.name.findName(), username: faker.internet.userName(), password: faker.internet.password(), email: faker.internet.email(), phone: faker.phone.phoneNumber(), address: faker.address.streetAddress(), createdAt: new Date(), updatedAt : new Date()})
-    }
-      return queryInterface.bulkInsert('Profile_tukangs', newArr)
+    // let faker = require('faker')
+    // let newArr = []
+    // for (let i = 0; i < 10; i++ ) {
+    //   newArr.push({fullname: faker.name.findName(), username: faker.internet.userName(), password: faker.internet.password(), email: faker.internet.email(), phone: faker.phone.phoneNumber(), address: faker.address.streetAddress(), createdAt: new Date(), updatedAt : new Date()})
+    // }
+    //   return queryInterface.bulkInsert('Profile_tukangs', newArr)
   },
 
   down: function (queryInterface, Sequelize) {

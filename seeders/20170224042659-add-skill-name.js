@@ -12,12 +12,7 @@ module.exports = {
         isBetaMember: false
       }], {});
     */
-    // let faker = require('faker')
-    // let newArr = []
-    // for (let i = 0; i < 10; i++ ) {
-    //   newArr.push({Profile_tukangId: faker.random.number(), username: faker.internet.userName(), password: faker.internet.password(), email: faker.internet.email(), phone: faker.phone.phoneNumber(), address: faker.address.streetAddress(), createdAt: new Date(), updatedAt : new Date()})
-    // }
-    //   return queryInterface.bulkInsert('Profile_tukangs', newArr)
+    return queryInterface.bulkInsert('Skill_tukangs', [{skill_name: 'Tukang Kebun', createdAt: new Date(), updatedAt : new Date()}, {skill_name: 'Tukang Elektronik', createdAt: new Date(), updatedAt : new Date()},{skill_name: 'Tukang Bangunan', createdAt: new Date(), updatedAt : new Date()} ])
   },
 
   down: function (queryInterface, Sequelize) {
