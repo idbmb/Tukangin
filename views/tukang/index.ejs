@@ -1,0 +1,13 @@
+<h1>disini buat halaman tukang yang sesuai dengan kategori</h1>
+<table>
+<% tukangs.forEach(function(tukang){ %>
+  <tr>
+    <td><%=tukang.id%></td>
+    <td><%=tukang.fullname%></td>
+    <td><%=tukang.address%></td>
+    <td><%=tukang.email%></td>
+    <td><%=tukang.phone%></td>
+    <td><%=tukang.Skill_tukang.skill_name%></td>
+  </tr>
+<% }) %>
+</table>
